@@ -33,7 +33,12 @@ Primary buttons are used as a call to action and indicate the most important act
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Story name="secondary">
-  <SecondaryButton>Hello world</SecondaryButton>
+  <SecondaryButton
+    onClick={action("button-click")}
+    disabled={boolean("Disabled", false)}
+  >
+    Hello world
+  </SecondaryButton>
 </Story>
 
 ## Tertiary Buttons
@@ -41,5 +46,10 @@ Primary buttons are used as a call to action and indicate the most important act
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Story name="tertiary">
-  <TertiaryButton>Hello world</TertiaryButton>
+  <TertiaryButton
+    onClick={action("button-click")}
+    disabled={boolean("Disabled", false)}
+  >
+    Hello world
+  </TertiaryButton>
 </Story>
